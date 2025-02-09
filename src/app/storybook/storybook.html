@@ -1,0 +1,23 @@
+<h2>Custom Storybook</h2>
+<div class="storybook-wrapper">
+    <div class="storybook-menu">
+        <div class="component-list">
+            <mat-selection-list #shoes [multiple]="false">
+                <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe" class="storybook-option">
+                    {{shoe}}
+                </mat-list-option>
+            </mat-selection-list>
+        </div>
+        <p>
+            Option selected: {{shoes.selectedOptions.selected[0]?.value}}
+        </p>
+    </div>
+    <div class="storybook-component-wrapper">
+        <div class="storybook-component storybook-element">
+        </div>
+        <div class="storybook-props storybook-element">
+            <h3>Component's properties</h3>
+
+        </div>
+    </div>
+</div>

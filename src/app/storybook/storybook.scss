@@ -1,0 +1,33 @@
+$border: 1px solid grey;
+
+.storybook-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.storybook-element {
+    border-left: $border;
+    padding: 0 20px;
+}
+
+.storybook-option:hover {
+    background-color: lightblue;
+}
+
+.storybook-component-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;    
+    box-shadow: -1px -1px 1px 1px gray;
+}
+
+.wrapper-properties-grid {
+    display: grid;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.storybook-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
